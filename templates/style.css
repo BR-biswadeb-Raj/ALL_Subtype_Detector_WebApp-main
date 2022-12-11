@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Georgia;
+}
+.container{
+    max-width: 960px;
+    width: 96%;
+
+}
+
+/* css style frome here */
+
+
+/*navigation bar style start from here */
+header{
+    background-color: #290000;
+    border-top: 5px solid turquoise;
+
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* navigation end*/
+.carousel{
+
+}
+.carousel-item{
+    height: 380px;
+    position: relative;
+ 
+    
+}
+.carousel-item img{
+   width: 1050px;
+   margin: 0px auto;
+
+
+
+}
+
+
+
+.predict-section{
+    background-color: #660000;
+    padding: 40px 0px;
+}
+.form-title{
+    position: relative;
+    padding: 40px 0px;
+    background-color: rgb(161, 157, 186);
+}
+.form-title h1{
+    font-size: 21px;
+    text-align: center;
+    font-family: Georgia;
+    color: white;
+}
+.forms{
+    padding: 40px 0px;
+}
+.form-group{
+    position: relative;
+    
+}
+.form-group h3{
+    font-size: 26px;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+
+}
+.files-input{
+    display: flex;
+    justify-content: center;
+}
+.form-control{
+    font-size: 13px;
+    text-align: left;
+}
+.files-input .btn{
+    font-size: 13px;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+
+}
+.services-section{
+    background-color: #660000;
+    padding: 40px 0px;
+}
+.service-title{
+    position: relative;
+}
+.service-title h1{
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 40px;
+    color: white;
+}
+.service-title h1 span{
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: turquoise;
+}
+.box{
+    margin: 0px auto;
+}

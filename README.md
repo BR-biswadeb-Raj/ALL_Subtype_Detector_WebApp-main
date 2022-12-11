@@ -1,1 +1,1 @@
-# ALL_Subtype_Detector_WebApp-main
+# ALL_Subtype_Detector_WebApp

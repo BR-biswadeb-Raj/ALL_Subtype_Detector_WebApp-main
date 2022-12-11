@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Acute Lymphoblastic Leukemia Subtypes Classification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- NAVBAR -->
+    <!-- <nav class="navbar navbar-dark bg-dark">
+      </nav>
+       -->
+    <header>
+      <div class="container">
+        <nav class="navbar">
+
+          <div></div>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="nav ">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+            </div>
+
+        </nav> 
+
+      </div>
+
+<!-- END NAVBAR -->
+     <div class="container">
+      <div id="demo" class="carousel slide "  data-bs-ride="carousel">
+
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+
+        <div class="carousel-inner">
+          <div class="carousel-item ">
+            <img src="images/item-4.jpeg" alt="">
+            
+            
+          </div>
+  
+          <div class="carousel-item active">
+            <img src="images/item-5.jpeg" alt="">
+           
+          </div>
+  
+          <div class="carousel-item ">
+            <img src="images/item-6.jpeg" alt="">
+            
+          </div>
+  
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+
+     </div>
+    </header>
+    <!--head end with slide-->
+
+ <section class="predict-section">
+  <div class="container">
+    <div class="form-title">
+      <h1 >Acute Lymphoblastic Leukemia Sybtypes Classification</h1>
+  
+    </div>
+  
+     <!--FORM start-->
+     <div class="forms">
+      <div class="row">
+        <div class="col-12">
+          
+      <form class="form-horizontal" action="/submit" method="post" enctype="multipart/form-data">
+  
+        <div class="form-group">
+         <h3>Upload Microscopic Blood Smear Image</h3>
+          
+        </div>
+        <div class="files-input">          
+          <input type="file" class="form-control" placeholder="Hours Studied"  name="my_image" id="pwd"> <!--Image Upload Box-->
+          <button type="submit" class="btn btn-success">Predict</button> <!--Image Submit-->
+        </div>
+    
+   
+      </form>
+
+        </div>
+
+      </div>
+
+     </div>
+ <!--FORM END-->
+
+  </div>
+  
+ </section>
+   <!--from-sectoion end-->
+
+
+	
+<!--the Service section from here-->
+<section class="services-section">
+  <div class="container">
+    <div class="service-title">
+      <h1><span>our</span>Services</h1>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="box">
+          {% if prediction %}
+         <h3>Diagnosing the following</h3>
+         <img  src="{{img_path}}" height="224px" width="224px">
+         <a href="" type="button" class="btn">Diagnosis Result...</a>
+     
+           {% endif %}
+     
+        </div>
+  
+      </div>
+
+
+      <div class="col-3">
+        <div class="box">
+          {% if prediction %}
+         <h3>Diagnosing the following </h3>
+         <img  src="{{img_path}}" height="224px" width="224px">
+         <a href="" type="button" class="btn">Diagnosis Result...</a>
+     
+           {% endif %}
+     
+        </div>
+  
+      </div>
+
+      <div class="col-3">
+        <div class="box">
+          {% if prediction %}
+         <h3>Diagnosing the following</h3>
+         <img  src="{{img_path}}" height="224px" width="224px">
+         <a href="" type="button" class="btn">Diagnosis Result...</a>
+     
+           {% endif %}
+     
+        </div>
+  
+      </div>
+
+
+      <div class="col-3">
+        <div class="box">
+          {% if prediction %}
+         <h3>Diagnosing the following </h3>
+         <img  src="{{img_path}}" height="224px" width="224px">
+         <a href="" type="button" class="btn">Diagnosis Result..</a>
+     
+           {% endif %}
+     
+        </div>
+  
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!--service End-->
+
+<!-- FOOTER START -->
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-dark"
+            style="background-color: #ECEFF1"
+            >
+      <!-- Section: Social media -->
+      <section
+               class="d-flex justify-content-between p-4 text-white"
+               style="background-color: #21D192"
+               >
+        <!-- Left -->
+        <div class="me-5">
+          <span>The Tele Diagnosing Web App has been developed for the partial fulfillment of the requirements for the Degree of Bachelor of Science in Computer Science and Engineering</span>
+        </div>
+        <!-- Left -->
+  
+        <!-- Right -->
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold">Project Title</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p>
+                Automated Detection of Acute Lymphoblastic Leukemia Subtypes from Microscopic Blood Smear Images using Deep Neural Networks
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+    
+           
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Developed By</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i><b>Md. Taufiqul Haque Khan Tusar</b></p>
+              <p><i class="fas fa-envelope mr-3"></i> ID: 181472099</p>
+              <p><i class="fas fa-phone mr-3"></i> Email: taufiq@ieee.org</p>
+
+              <p><i class="fas fa-home mr-3"></i><b>Roban Khan Anik</b></p>
+              <p><i class="fas fa-envelope mr-3"></i> ID: 182482057</p>
+              <p><i class="fas fa-phone mr-3"></i> Email: rkanik2014@gmail.com</p>
+            </div>
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold">Supervised By</h6>
+              <hr
+                  class="mb-4 mt-0 d-inline-block mx-auto"
+                  style="width: 60px; background-color: #7c4dff; height: 2px"
+                  />
+              <p><i class="fas fa-home mr-3"></i><b>Md. Touhidul Islam</b></p>
+              <p><i class="fas fa-envelope mr-3"></i> Lecturer</p>
+              <p><i class="fas fa-phone mr-3"></i>Department of Computer Science & Engineering</p>
+              <p><i class="fas fa-phone mr-3"></i>City University, Dhaka 1216, Bangladesh</p>
+
+            </div>
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2022 Copyright:
+        <a class="text-dark" href="https://mdbootstrap.com/"
+           >City University</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+<!-- FOOTER END -->
+
+
+
+
+</body>
+</html>
